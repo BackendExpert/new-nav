@@ -7,6 +7,13 @@ const navBar = () => {
     {name:"History",link:"/"},
     {name:"Vision and Mision",link:"/"},
   ];
+  let people =[
+    {name:"Scientist",link:"/"},
+    {name:"Academics",link:"/"},
+    {name:"Non Academics",link:"/"},
+    {name:"Volunteer",link:"/"},
+    {name:"Alumin",link:"/"},
+  ];
 
   let [openMenu, setMenu] = useState(false);
   let [openAbout, AboutOpen] = useState(false);
@@ -41,6 +48,55 @@ const navBar = () => {
                       }
                     </ul>
                   </div>
+                  <div>
+                    <span className="text-2xl">People</span>
+                    <ul className="py-4 ml-2">
+                      {
+                        institute.map((link)=>(
+                          <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
+                            <a href={link.link} className=''>{link.name}</a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                  <div>
+                    <span className="text-2xl">Institute</span>
+                    <ul className="py-4 ml-2">
+                      {
+                        institute.map((link)=>(
+                          <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
+                            <a href={link.link} className=''>{link.name}</a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                  <div>
+                    <span className="text-2xl">Institute</span>
+                    <ul className="py-4 ml-2">
+                      {
+                        institute.map((link)=>(
+                          <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
+                            <a href={link.link} className=''>{link.name}</a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                  <div>
+                    <span className="text-2xl">Institute</span>
+                    <ul className="py-4 ml-2">
+                      {
+                        institute.map((link)=>(
+                          <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
+                            <a href={link.link} className=''>{link.name}</a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+
                 </div>
               </div>
             </li>
