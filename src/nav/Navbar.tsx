@@ -14,6 +14,27 @@ const navBar = () => {
     {name:"Volunteer",link:"/"},
     {name:"Alumin",link:"/"},
   ];
+  let leadership =[
+    {name:"Board of Govrnors",link:"/"},
+    {name:"Chairman",link:"/"},
+    {name:"Directir",link:"/"},
+    {name:"Research Council",link:"/"},
+  ];
+  let administration =[
+    {name:"Account Division",link:"/"},
+    {name:"Administration Division",link:"/"},
+    {name:"Computer Division",link:"/"},
+    {name:"Science Education & Dissemination Unit",link:"/"},
+    {name:"Instrument & Maintenance Division",link:"/"},
+    {name:"Internal Audit Division",link:"/"},
+    {name:"Office of the Director",link:"/"},
+    {name:"Procurement & Kabiratory Service Divison",link:"/"},
+  ];
+  let society =[
+    {name:"Young Scientist Association",link:"/"},
+    {name:"Welfare",link:"/"},
+  ];
+
 
   let [openMenu, setMenu] = useState(false);
   let [openAbout, AboutOpen] = useState(false);
@@ -52,7 +73,7 @@ const navBar = () => {
                     <span className="text-2xl">People</span>
                     <ul className="py-4 ml-2">
                       {
-                        institute.map((link)=>(
+                        people.map((link)=>(
                           <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
                             <a href={link.link} className=''>{link.name}</a>
                           </li>
@@ -61,10 +82,10 @@ const navBar = () => {
                     </ul>
                   </div>
                   <div>
-                    <span className="text-2xl">Institute</span>
+                    <span className="text-2xl">Leadership</span>
                     <ul className="py-4 ml-2">
                       {
-                        institute.map((link)=>(
+                        leadership.map((link)=>(
                           <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
                             <a href={link.link} className=''>{link.name}</a>
                           </li>
@@ -73,10 +94,10 @@ const navBar = () => {
                     </ul>
                   </div>
                   <div>
-                    <span className="text-2xl">Institute</span>
+                    <span className="text-2xl">Administration</span>
                     <ul className="py-4 ml-2">
                       {
-                        institute.map((link)=>(
+                        administration.map((link)=>(
                           <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
                             <a href={link.link} className=''>{link.name}</a>
                           </li>
@@ -85,10 +106,10 @@ const navBar = () => {
                     </ul>
                   </div>
                   <div>
-                    <span className="text-2xl">Institute</span>
+                    <span className="text-2xl">Society</span>
                     <ul className="py-4 ml-2">
                       {
-                        institute.map((link)=>(
+                        society.map((link)=>(
                           <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
                             <a href={link.link} className=''>{link.name}</a>
                           </li>
