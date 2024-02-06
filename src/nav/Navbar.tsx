@@ -34,6 +34,11 @@ const navBar = () => {
     {name:"Young Scientist Association",link:"/"},
     {name:"Welfare",link:"/"},
   ];
+  let facilities =[
+    {name:"Research Center",link:"/"},
+    {name:"Library",link:"/"},
+    {name:"Conference Facilities",link:"/"},
+  ];
 
 
   let [openMenu, setMenu] = useState(false);
@@ -110,6 +115,18 @@ const navBar = () => {
                     <ul className="py-4 ml-2">
                       {
                         society.map((link)=>(
+                          <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
+                            <a href={link.link} className=''>{link.name}</a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                  <div>
+                    <span className="text-2xl">Society</span>
+                    <ul className="py-4 ml-2">
+                      {
+                        facilities.map((link)=>(
                           <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
                             <a href={link.link} className=''>{link.name}</a>
                           </li>
