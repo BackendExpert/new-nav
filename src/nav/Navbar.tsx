@@ -12,11 +12,11 @@ const navBar = () => {
           <IonIcon className="text-3xl" name="chatbubbles" />
           <span className="text-xl px-2">Logo Here</span>
         </span>
-        <div onClick={() => setMenu(!openMenu)} className="text-2xl absolute cursor-pointer md:hidden right-8 top-4">
+        <div onClick={() => setMenu(!openMenu)} className="text-2xl absolute cursor-pointer right-8 top-4 md:hidden ">
             <IonIcon name={openMenu ? "close" : "menu"}/>
           </div>
         <div>
-          <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${openMenu ? 'top-20 ':'top-[-590px]'}`}>
+          <ul className={`md:flex md:items-center md:pb-0 absolute md:static md:z-auto z-[-1] bg-gray-500 left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${openMenu ? 'top-20 ':'top-[-590px]'}`}>
             <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
             <li className="px-4 py-4 md:py-0">
               <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[0px]"><IonIcon name={openAbout ? "chevron-down" : "chevron-up"}/></span></span>
