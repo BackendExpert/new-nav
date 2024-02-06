@@ -11,10 +11,12 @@ const navBar = () => {
         <div>
           <ul className="flex">
             <li className="px-8"><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
+            <li className="px-8">
+              <span></span>
+            </li>
+            <li className="px-8"><a href="">Home</a></li>
+            <li className="px-8"><a href="">Home</a></li>
+            <li className="px-8"><a href="">Home</a></li>
           </ul>
         </div>
       </div>
