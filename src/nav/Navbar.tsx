@@ -1,6 +1,9 @@
 import IonIcon from "@reacticons/ionicons"
+import { useState } from "react"
 
 const navBar = () => {
+  let [openAbout, AboutOpen] = useState(false);
+
   return (
     <div className="shadow-md w-full top-0 left-0 bg-blue-900">
       <div className="md:flex items-center justify-between bg-gray-700 text-white py-4 md:px-20 px-7">
@@ -12,7 +15,7 @@ const navBar = () => {
           <ul className="flex">
             <li className="px-8"><a href="">Home</a></li>
             <li className="px-8">
-              <span className="">About</span>
+              <span className="cursor-pointer" onClick={() => AboutOpen(!openAbout)}>About <IonIcon name={openAbout ? "" : ""}/></span>
             </li>
             <li className="px-8"><a href="">Home</a></li>
             <li className="px-8"><a href="">Home</a></li>
