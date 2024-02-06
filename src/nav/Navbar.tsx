@@ -211,8 +211,8 @@ const navBar = () => {
             </li>
             <li className="px-4 py-4 md:py-0">
               <span className="cursor-pointer flex" onClick={() => JobOpen(!openJob)}>Careers <span className="pl-2 pt-[0px]"><IonIcon name={openJob ? "chevron-up" : "chevron-down"}/></span></span>
-              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[200px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openJob ? 'top-20':'md:top-[-3500px] top-[-2000px]'}`}>
-                <div className="md:grid md:grid-cols-3 gap-2 md:px-12 px-0 py-4">  
+              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[258px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openJob ? 'top-20':'md:top-[-3500px] top-[-2000px]'}`}>
+                <div className="md:grid md:grid-cols-2 gap-2 md:px-12 px-0 py-4">  
                     <div>
                       <span className="text-2xl"><a href="">Vacancies</a></span>
                     </div>
