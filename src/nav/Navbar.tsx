@@ -4,7 +4,10 @@ const navBar = () => {
   return (
     <div className="shadow-md w-full top-0 left-0 bg-blue-900">
       <div className="md:flex items-center justify-between bg-gray-700 text-white py-4 md:px-20 px-7">
-      <IonIcon name="chatbubbles" />
+        <span className="flex">
+          <IonIcon className="text-3xl" name="chatbubbles" />
+          <span className="text-xl px-2">Logo Here</span>
+        </span>
       </div>
     </div>
   )
