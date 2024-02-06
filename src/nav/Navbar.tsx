@@ -20,8 +20,8 @@ const navBar = () => {
             <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
             <li className="px-4 py-4 md:py-0">
               <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[0px]"><IonIcon name={openAbout ? "chevron-down" : "chevron-up"}/></span></span>
-              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] left-16 md:w-11/12 md:mr-12 mt-[20px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openAbout ? 'top-20':'md:top-[-100px] top-[-150px]'}`}>
-                  asdasd
+              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[35px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openAbout ? 'top-20':'md:top-[-100px] top-[-1500px]'}`}>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem maxime temporibus atque nesciunt velit ex, aspernatur fugiat quod similique, laborum molestias doloremque eaque incidunt soluta repellendus repudiandae vitae at.
               </div>
             </li>
             <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
