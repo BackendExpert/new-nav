@@ -198,13 +198,13 @@ const navBar = () => {
                 <div className="md:grid md:grid-cols-3 gap-2 md:px-12 px-0 py-4">  
 
                     <div>
-                      <span className="text-2xl">YSCMR</span>
+                      <span className="text-2xl"><a href="">YSCMR</a></span>
                     </div>
                     <div>
-                      <span className="text-2xl">Annual Research Review</span>
+                      <span className="text-2xl"><a href="">Annual Research Review</a></span>
                     </div>
                     <div>
-                      <span className="text-2xl">E-Repository</span>
+                      <span className="text-2xl"><a href="">E-Repository</a></span>
                     </div>
 
 
