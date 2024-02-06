@@ -160,10 +160,10 @@ const navBar = () => {
                 <div className="md:grid md:grid-cols-3 gap-2 md:px-12 px-0 py-4">  
                   <div>
                     <div>
-                      <span className="text-2xl">Society</span>
+                      <span className="text-2xl">Research</span>
                       <ul className="py-4 ml-2">
                         {
-                          society.map((link)=>(
+                          research.map((link)=>(
                             <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
                               <a href={link.link} className=''>{link.name}</a>
                             </li>
