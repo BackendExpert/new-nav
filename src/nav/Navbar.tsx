@@ -8,6 +8,15 @@ const navBar = () => {
           <IonIcon className="text-3xl" name="chatbubbles" />
           <span className="text-xl px-2">Logo Here</span>
         </span>
+        <div>
+          <ul className="flex">
+            <li className="px-8"><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   )
