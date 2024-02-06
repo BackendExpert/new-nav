@@ -123,7 +123,7 @@ const navBar = () => {
                     </ul>
                   </div>
                   <div>
-                    <span className="text-2xl">Society</span>
+                    <span className="text-2xl">Facilities</span>
                     <ul className="py-4 ml-2">
                       {
                         facilities.map((link)=>(
