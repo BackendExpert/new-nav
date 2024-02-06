@@ -222,7 +222,7 @@ const navBar = () => {
                 </div>
               </div>
             </li>
-            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
+            <li className="px-4 py-4 md:py-0"><a href="">Contact</a></li>
           </ul>
         </div>
       </div>
