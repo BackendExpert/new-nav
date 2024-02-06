@@ -2,6 +2,10 @@ import IonIcon from "@reacticons/ionicons"
 import { useState } from "react"
 
 const navBar = () => {
+  let [openMenu, setMenu] = useState(false);
+  let [openAbout, AboutOpen] = useState(false);
+  let [openAcadamy, AcadamyOpen] = useState(false);
+
   let institute =[
     {name:"About Us",link:"/"},
     {name:"History",link:"/"},
@@ -41,8 +45,7 @@ const navBar = () => {
   ];
 
 
-  let [openMenu, setMenu] = useState(false);
-  let [openAbout, AboutOpen] = useState(false);
+
 
 
   return (
@@ -141,11 +144,22 @@ const navBar = () => {
             </li>
             <li className="px-4 py-4 md:py-0"><a href="">News & Event</a></li>
             <li className="px-4 py-4 md:py-0">
-              <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[0px]"><IonIcon name={openAbout ? "chevron-up" : "chevron-down"}/></span></span>
-              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[35px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openAbout ? 'top-20':'md:top-[-3500px] top-[-1500px]'}`}>
+              <span className="cursor-pointer flex" onClick={() => AcadamyOpen(!openAcadamy)}>About <span className="pl-2 pt-[0px]"><IonIcon name={openAcadamy ? "chevron-up" : "chevron-down"}/></span></span>
+              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[35px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openAcadamy ? 'top-20':'md:top-[-3500px] top-[-1500px]'}`}>
                 <div className="md:grid md:grid-cols-3 gap-2 md:px-12 px-0 py-4">  
                   <div>
-
+                    <div>
+                      <span className="text-2xl">Society</span>
+                      <ul className="py-4 ml-2">
+                        {
+                          society.map((link)=>(
+                            <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
+                              <a href={link.link} className=''>{link.name}</a>
+                            </li>
+                          ))
+                        }
+                      </ul>
+                    </div>
                   </div>
 
                 </div>
