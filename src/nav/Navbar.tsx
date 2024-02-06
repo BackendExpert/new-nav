@@ -195,31 +195,16 @@ const navBar = () => {
             <li className="px-4 py-4 md:py-0">
               <span className="cursor-pointer flex" onClick={() => PubOpen(!openpub)}>Academic <span className="pl-2 pt-[0px]"><IonIcon name={openpub ? "chevron-up" : "chevron-down"}/></span></span>
               <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[145px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openpub ? 'top-20':'md:top-[-3500px] top-[-2000px]'}`}>
-                <div className="md:grid md:grid-cols-2 gap-2 md:px-12 px-0 py-4">  
+                <div className="md:grid md:grid-cols-3 gap-2 md:px-12 px-0 py-4">  
 
                     <div>
-                      <span className="text-2xl">Research</span>
-                      <ul className="py-4 ml-2">
-                        {
-                          research.map((link)=>(
-                            <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
-                              <a href={link.link} className=''>{link.name}</a>
-                            </li>
-                          ))
-                        }
-                      </ul>
+                      <span className="text-2xl">YSCMR</span>
                     </div>
                     <div>
-                      <span className="text-2xl">Study</span>
-                      <ul className="py-4 ml-2">
-                        {
-                          study.map((link)=>(
-                            <li key={link.name} className='pb-[5px] duration-500 hover:bg-white hover:px-2 hover:text-gray-700 rounded-sm font-medium'>
-                              <a href={link.link} className=''>{link.name}</a>
-                            </li>
-                          ))
-                        }
-                      </ul>
+                      <span className="text-2xl">Annual Research Review</span>
+                    </div>
+                    <div>
+                      <span className="text-2xl">E-Repository</span>
                     </div>
 
 
