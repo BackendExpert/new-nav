@@ -15,7 +15,7 @@ const navBar = () => {
           <ul className="flex">
             <li className="px-8"><a href="">Home</a></li>
             <li className="px-8">
-              <span className="cursor-pointer" onClick={() => AboutOpen(!openAbout)}>About <IonIcon name={openAbout ? "chevron-down" : "chevron-up"}/></span>
+              <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[2px]"><IonIcon name={openAbout ? "chevron-down" : "chevron-up"}/></span></span>
             </li>
             <li className="px-8"><a href="">Home</a></li>
             <li className="px-8"><a href="">Home</a></li>
