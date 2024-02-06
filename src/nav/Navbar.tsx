@@ -1,3 +1,5 @@
+import IonIcon from "@reacticons/ionicons"
+
 const navBar = () => {
   return (
     <div className="shadow-md w-full top-0 left-0 bg-blue-900">
