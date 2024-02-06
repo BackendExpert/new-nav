@@ -133,6 +133,7 @@ const navBar = () => {
                         ))
                       }
                     </ul>
+                    <span className="text-2xl">Life at NIFS</span>
                   </div>
 
                 </div>
