@@ -3,6 +3,7 @@ import { useState } from "react"
 
 const navBar = () => {
   let [openAbout, AboutOpen] = useState(false);
+  let [openMenu, setMenu] = useState(false);
 
   return (
     <div className="shadow-md w-full top-0 left-0 bg-blue-900">
@@ -12,14 +13,14 @@ const navBar = () => {
           <span className="text-xl px-2">Logo Here</span>
         </span>
         <div>
-          <ul className="md:flex md:item-center md:pb-0 pb-6 pt-4 pl-4">
-            <li className="px-4 py-4"><a href="">Home</a></li>
-            <li className="px-4 py-4">
-              <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[2px]"><IonIcon name={openAbout ? "chevron-down" : "chevron-up"}/></span></span>
+          <ul className="md:flex md:item-center md:pb-0 pb-6 md:pt-0 pt-4 pl-4">
+            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
+            <li className="px-4 py-4 md:py-0">
+              <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[0px]"><IonIcon name={openAbout ? "chevron-down" : "chevron-up"}/></span></span>
             </li>
-            <li className="px-4 py-4"><a href="">Home</a></li>
-            <li className="px-4 py-4"><a href="">Home</a></li>
-            <li className="px-4 py-4"><a href="">Home</a></li>
+            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
+            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
+            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
           </ul>
         </div>
       </div>
