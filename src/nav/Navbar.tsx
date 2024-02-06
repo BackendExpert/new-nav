@@ -13,6 +13,9 @@ const navBar = () => {
           <span className="text-xl px-2">Logo Here</span>
         </span>
         <div>
+          <div onClick={() => setMenu(!openMenu)} className="text-2xl absolute cursor-pointer md:hidden">
+
+          </div>
           <ul className="md:flex md:item-center md:pb-0 pb-6 md:pt-0 pt-4 pl-4">
             <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
             <li className="px-4 py-4 md:py-0">
