@@ -139,8 +139,18 @@ const navBar = () => {
                 </div>
               </div>
             </li>
-            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
-            <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
+            <li className="px-4 py-4 md:py-0"><a href="">News & Event</a></li>
+            <li className="px-4 py-4 md:py-0">
+              <span className="cursor-pointer flex" onClick={() => AboutOpen(!openAbout)}>About <span className="pl-2 pt-[0px]"><IonIcon name={openAbout ? "chevron-up" : "chevron-down"}/></span></span>
+              <div className={`rounded items-center py-6 px-4 absolute static bg-gray-700  z-auto z-[-1] md:w-11/12 w-11/12 md:left-12 left-[-2px] ml-4 md:mr-12 mt-[35px] w-auto ml-0 pr-24 md:pl-12 pl-9 md:mt-[-14px] md:mr-10 mr-8 transition-all duration-500 ease-in ${openAbout ? 'top-20':'md:top-[-3500px] top-[-1500px]'}`}>
+                <div className="md:grid md:grid-cols-3 gap-2 md:px-12 px-0 py-4">  
+                  <div>
+
+                  </div>
+
+                </div>
+              </div>
+            </li>
             <li className="px-4 py-4 md:py-0"><a href="">Home</a></li>
           </ul>
         </div>
