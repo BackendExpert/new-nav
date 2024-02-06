@@ -44,6 +44,17 @@ const navBar = () => {
     {name:"Conference Facilities",link:"/"},
   ];
 
+  // Academic
+
+  let research =[
+    {name:"Biological Sciences",link:"/"},
+    {name:"Chemical & Physical Science",link:"/"},
+    {name:"Computer Science, Mathematics & Statistics",link:"/"},
+    {name:"Earth & Space Science",link:"/"},
+    {name:"Environment Science",link:"/"},
+    {name:"Philosophy & Social Science",link:"/"},
+  ];
+
 
 
 
